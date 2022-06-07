@@ -38,7 +38,7 @@ def recognize_image():
     success = False
 
     if files and allowed_file(filename):
-            files.save(os.path.join(app.config['UPLOAD_FOLDER'], filename))
+            files.save(os.path.join(app.config['UPLOAD_FOLDER'], 'save.png'))
             success = True
             image_path = Image.open(files)
             image_path = image_path.convert('RGB')
@@ -56,9 +56,7 @@ def recognize_image():
             # predict
             prediction_array = model.predict(images)
 
-            class_names =  ['asam jawa', 'cengkeh', 'daun jeruk', 'daun salam', 
-                            'jahe', 'kayu manis', 'keluak', 'kemiri', 'ketumbar', 
-                            'kunyit', 'lada hitam', 'pekak','serai']
+            class_names =  ['asam jawa', 'cengkeh', 'daun jeruk', 'daun salam', 'jahe', 'kayu manis', 'keluak', 'kemiri', 'ketumbar', 'kunyit', 'lada hitam', 'pekak','serai']
             result = {
                 "prediction": class_names[np.argmax(prediction_array)],
                 "confidence": '{:2.0f}%'.format(100 * np.max(prediction_array))
@@ -75,4 +73,4 @@ def recognize_image():
     # img_url = os.path.join(app.config['UPLOAD_FOLDER'], filename)
 
 if __name__ == '__main__':
-    app.run(debug=False, host='0.0.0.0')
+    app.run(debug=False)
