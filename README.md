@@ -11,7 +11,7 @@ Spezia
 
 ## Description
 
-This repository is for Spezia Machine Learning team
+This repository is for Spezia Machine Learning team. This application is for spice's image recognition by using Convolutional Neural Network, also known as CNN or ConvNet, is a class of neural networks for machine learning model. This model using 3 layers of CNN and have final accuracy around 0.9905 and validation accuracy 0.7662.  
 
 #### Technologies
 
