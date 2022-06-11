@@ -1,9 +1,11 @@
 # Machine Learning - Spezia C22-PS136
-
+<h1 align="center">
 <br>
 <a href=""><img src="https://github.com/Spezia-Bangkit-Capstone-Project/ML-Spezia/blob/main/dataset/20220510_173544.png" alt="Spezia" width="400" height="400"></a>
 <br>
-
+Spezia
+<br>
+</h1>
 ---
 
 ## Description
